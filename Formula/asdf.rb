@@ -1,8 +1,8 @@
 class Asdf < Formula
   desc "Agent Session & Directory Forker"
   homepage "https://github.com/PHELAT/asdf"
-  url "https://github.com/PHELAT/asdf/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "f15124459c7ab492fa4a5b8a9e7c7b91e0c0e2d8cd63091259cfdaf78449aa62"
+  url "https://github.com/PHELAT/asdf/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "b8ffe823c9c28b13a7ab9503d0a08a186b66de6ca345df2058173339f8379abb"
   license "Apache-2.0"
 
   depends_on "git"
@@ -24,7 +24,7 @@ class Asdf < Formula
   end
 
   test do
-    assert_match "asdf 1.0.0", shell_output("#{bin}/asdf version")
+    assert_match "asdf 1.1.0", shell_output("#{bin}/asdf version")
     assert_match "_asdf_completion", shell_output("#{bin}/asdf --completion bash")
   end
 end
