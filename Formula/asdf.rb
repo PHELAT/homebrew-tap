@@ -5,6 +5,12 @@ class Asdf < Formula
   sha256 "57cba2e47bfb7041abcff94932d205f453fe5a0e3bc4d67a405170ac0f7be417"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/PHELAT/homebrew-tap/releases/download/asdf-1.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "62a01dd450a547bde75e4cb0e91ddf78e5b2fe509b614ab17e51e29272cdb63e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d38e72d0bd318b0cc5c73c8f1bfda7722167d3ff20e5a1bf41a7e3141c25dc33"
+  end
+
   depends_on "git"
   uses_from_macos "bash"
   uses_from_macos "curl"
